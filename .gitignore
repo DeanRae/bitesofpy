@@ -7,6 +7,9 @@
 *.html
 *.txt
 
+### pycache ###
+*_pycache_*
+
 ### macOS ###
 # General
 .DS_Store
