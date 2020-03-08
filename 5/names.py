@@ -34,4 +34,5 @@ def shortest_first_name(names):
        You can assume there is only one shortest name.
     """
     names = dedup_and_title_case_names(names)
-    # ...
+
+    return sorted([n.split()[0] for n in names], key=lambda s: len(s.split()[0]))[0]
