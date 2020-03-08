@@ -24,7 +24,9 @@ def dedup_and_title_case_names(names):
 def sort_by_surname_desc(names):
     """Returns names list sorted desc by surname"""
     names = dedup_and_title_case_names(names)
-    # ...
+
+    # splicing at 1 assuming that first name is 1 word but may have two word surnames
+    return sorted(names, key=lambda s: s.split()[1:], reverse=True)
 
 
 def shortest_first_name(names):
