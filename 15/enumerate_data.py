@@ -12,7 +12,7 @@ def enumerate_names_countries():
        6. Rodolfo    Mexico"""
     # assuming that the length of both lists is always equal, we can use
     # enumerate to get the index while looping through one list, then use
-    # the index to access the matching value in the other index
+    # the index to access the matching value in the other list
 
     for i, name in enumerate(names):
         print(f"{i+1}. {name:<11}{countries[i]}")
