@@ -1,0 +1,5 @@
+## [Bite 16. PyBites date generator](https://codechalleng.es/bites/16/)
+
+<p>Write a generator that returns special dates for PyBites: </p><ol><li>Every year mark counting from <code>PYBITES_BORN</code> date (so 19th of Dec 2017, 19th of Dec 2018, etc)</li><li>Every 100 days mark counting from <code>PYBITES_BORN</code> (29th of March 2017, 7th of July 2017, etc)</li></ol><p>See the tests for more details how your code will be tested: as this is a beginner's challenge we only calculate a few years ahead, leaving the next leap year (2020) out of this challenge.</p>
+
+Check out our full catalogue of Bites of Py [here](https://codechalleng.es/bites/catalogue).
