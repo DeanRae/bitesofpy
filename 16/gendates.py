@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta
-from itertools import islice
 
 PYBITES_BORN = datetime(year=2016, month=12, day=19)
 
@@ -8,7 +7,7 @@ def gen_special_pybites_dates():
     current_date = PYBITES_BORN
     next_birthday = PYBITES_BORN.replace(year=PYBITES_BORN.year + 1)
 
-    # for this bite, we stop at 2020
+    # for this bite, we stop at 2020 as per README
     while current_date.year < 2020:
         current_date += timedelta(days=100)
 
