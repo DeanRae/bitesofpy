@@ -1,7 +1,14 @@
-from datetime import datetime
+from datetime import datetime, timedelta
+from itertools import islice
 
 PYBITES_BORN = datetime(year=2016, month=12, day=19)
 
 
 def gen_special_pybites_dates():
-    pass
+    marked_dates = []
+    current_date = PYBITES_BORN
+
+    # for this bite, we stop at 2020
+    while current_date.year < 2020:
+        current_date += timedelta(days=100)
+        yield current_date
