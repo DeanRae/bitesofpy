@@ -5,7 +5,6 @@ PYBITES_BORN = datetime(year=2016, month=12, day=19)
 
 
 def gen_special_pybites_dates():
-    marked_dates = []
     current_date = PYBITES_BORN
     next_birthday = PYBITES_BORN.replace(year=PYBITES_BORN.year + 1)
 
