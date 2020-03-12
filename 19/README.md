@@ -1,0 +1,5 @@
+## [Bite 19. Write a simple property](https://codechalleng.es/bites/19/)
+
+<p>Write a simple <code>Promo</code> class. Its constructor receives a name <code>str</code> and expires <code>datetime</code>.</p><p>Add a <a href="https://docs.python.org/3/library/functions.html#property" target="_blank"><code>property</code></a> called <code>expired</code> which returns a boolean value indicating whether the promo has expired or not.</p><p>Checkout the tests and <code>datetime</code> module for more info. 
+
+Check out our full catalogue of Bites of Py [here](https://codechalleng.es/bites/catalogue).
