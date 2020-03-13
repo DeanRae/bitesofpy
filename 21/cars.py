@@ -28,12 +28,11 @@ def get_all_matching_models(cars=cars, grep="trail"):
     matching_cars = []
     for manufacturer in cars.values():
         for car in manufacturer:
-            if grep in car.lower():
+            if grep.lower() in car.lower():
                 matching_cars.append(car)
-    return matching_cars
+    return sorted(matching_cars)
 
 
 def sort_car_models(cars=cars):
     """return a copy of the cars dict with the car models (values)
        sorted alphabetically"""
-    pass
