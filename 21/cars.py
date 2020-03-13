@@ -15,7 +15,10 @@ def get_all_jeeps(cars=cars):
 
 def get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
-    pass
+    first_models = []
+    for manufacturer in cars.values():
+        first_models.append(manufacturer[0])
+    return first_models
 
 
 def get_all_matching_models(cars=cars, grep="trail"):
