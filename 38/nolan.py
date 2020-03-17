@@ -19,7 +19,9 @@ def get_tree():
 
 def get_movies():
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    pass
+    root = get_tree()
+    for child in root:
+        yield child.get("title")
 
 
 def get_movie_longest_runtime():
